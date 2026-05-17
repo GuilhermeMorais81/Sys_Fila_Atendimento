@@ -77,7 +77,7 @@ void emitirSenha() {
 
 void chamarProximo() {
     if(!estaVazia(&filaAtendimento)) {
-        printf(GREEN_BEGIN"Senha %d foi atendida e saiu da fila"COLOR_END, remove_Inicio(&filaAtendimento));
+        printf(GREEN_BEGIN"Senha %d foi atendida e saiu da fila"COLOR_END, remove_Inicio(&filaAtendimento).numero);
     } 
     else printf(MENS_FILA_VAZIA);
 }
@@ -88,7 +88,7 @@ void exibirTamLista() {
 }
 
 void emitirSenhaVip() {
-    insere_Inicio(&filaAtendimento, ++geradorSenhaVip);
+    insere_vip(&filaAtendimento, ++geradorSenhaVip);
     printf(GREEN_BEGIN"Senha VIP %d foi adicionada\n"COLOR_END, geradorSenhaVip);
 }
 

@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "Senha.h"
 
 typedef struct No {
-    int senha;
+    Senha senha;
     struct No *proximo;
 } No;
 
-No *novoNo(int senha);
+No *novoNo(Senha Senha);

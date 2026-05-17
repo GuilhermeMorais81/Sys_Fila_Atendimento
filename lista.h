@@ -10,9 +10,8 @@ typedef struct Lista {
 
 void novaLista(Lista *lista);
 int estaVazia(Lista *lista);
-void insere_Inicio(Lista *lista, int novaSenha);
+void insere_vip(Lista *lista, int contadorSenha);
 void exibe_Lista(Lista *lista);
-void insere_Fim(Lista *lista, int novaSenha);
-int remove_Inicio(Lista *lista);
-int remove_Fim(Lista *lista);
+void insere_Fim(Lista *lista, int contadorSenha);
+Senha remove_Inicio(Lista *lista);
 int tamanho_lista(Lista *lista);
